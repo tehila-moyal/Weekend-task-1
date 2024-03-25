@@ -1,0 +1,223 @@
+
+*{
+    margin: 0px;
+    padding: 0px; 
+     p{
+          margin: 5px;
+     }
+}
+#nav{
+  position:sticky;
+    top: 0;  
+    width: 100%;
+    display: flex;
+    background-color: rgb(233, 228, 222);
+    justify-content: space-between;
+    height: 100px;
+        overflow: hidden;
+.btt{
+    width: 50px;
+    height: 100%;
+
+}
+#logo{
+    height: 100%;
+}
+#sale
+{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(229, 177, 177);
+    position: relative;
+    animation-name:summer;
+    animation-duration: 4s;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+}
+
+#footer{      
+    flex-direction: row;
+    display: flex;
+    background-color: rgb(233, 228, 222);
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+      
+}
+
+#vid{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        
+        font-size: 100px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+      
+    }
+    #hed{
+     position: relative;
+     color: white;
+     text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    }
+    video {
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+}
+
+ 
+#shop{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    .product{
+        /* div of prodact */
+        border-style: solid;
+        border-radius: 10px;
+        height: 200px;
+        width:300px;
+        display: flex;
+        margin: 20px;
+        overflow: hidden;
+     
+
+        .probtt{
+            /* img of prodact */
+
+             width: 50%;
+             object-fit: contain;}
+
+            
+        
+        .prop{
+            /* txt of prodact */
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        
+
+          
+             
+        }
+    }
+    .btt{
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+.btt:hover {
+                animation: wiggle 2s  ;
+              }
+              button {
+                position: absolute;
+                left: calc(50% - 3em);
+                top: calc(50% - 2em);
+                
+                height: 4em;
+                width: 7em;
+                
+                background: #444;
+                border-radius: 0 0 0.2em 0.2em;
+                color: #fff;
+                font-family: Helvetica, Arial, Sans-serif;
+                font-size: 1em;
+                transform-origin: 50% 5em;
+              }              
+  
+ 
+}
+
+@keyframes summer {
+ 
+
+0%   {background-color:rgb(232, 151, 151); 
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;}
+    
+25%  {background-color:rgb(242, 242, 150); 
+    width: 200px;
+    border-radius: 0%;}
+50%  {background-color:rgb(149, 149, 234);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;}
+75%  {background-color:rgb(153, 244, 153);
+    width: 200px;
+    border-radius: 0%;}
+100% {background-color:rgb(229, 177, 177);
+     width: 100px;
+    height: 100px;
+    border-radius: 100%;}
+
+    
+}
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+} 
+@media only screen and (max-width: 600px) {
+   
+
+    #nav{
+        height:80px ;
+        
+        
+    }
+    #sale{
+        width: 80px;
+    height: 80px;
+
+        }
+    #vid{
+    h1{
+        font-size: 50px;
+    }
+
+    }
+}
+
+
+  

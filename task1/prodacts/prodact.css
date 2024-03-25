@@ -1,0 +1,194 @@
+*{
+
+    margin: 0px;
+    padding: 0px; 
+}
+#nav{
+    position:sticky;
+    top: 0;  
+    width: 100%;
+    display: flex;
+    background-color: rgb(233, 228, 222);
+    justify-content: space-between;
+    height: 100px;
+    
+    .btt{
+        width: 50px;
+        height: 100%;
+        
+    }
+    #logo{
+        height: 100%;
+    }
+}
+
+
+#footer{      
+    flex-direction: row;
+    display: flex;
+    background-color: rgb(233, 228, 222);
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+
+#vid{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    #hed{
+        position: relative;
+        color: white;
+        text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    }
+    
+    h1{
+        
+        font-size: 100px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        
+        
+    }
+    video {
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+    
+}
+
+#prodact{
+    display: flex;
+    justify-content: center;
+    #item{
+        /* div of prodact */
+        border-radius: 10px;
+        height: 400px;
+        width:100%;
+        display: flex;
+        margin: 20px;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    
+        
+        
+        
+        .probtt{  /* img of prodact */
+          
+            
+            object-fit: fill;
+        }
+            
+            
+            
+            
+            .prop{/* txt of prodact */
+                
+                flex-direction: column;
+                display: flex;
+                align-items: center;p{
+                    font-size: 2em;
+                    display: flex;
+                    justify-content: center;
+                }
+                #price{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }   #sumsale{
+                    text-decoration: line-through;
+                    font-size: 1.5em;
+                }
+            }
+            
+            
+        }
+#newprice
+        {
+            background-color:rgb(229, 177, 177);
+            position: relative;
+            animation-name:summer;
+            animation-duration: 0.5s;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            text-align: center;
+            color:rgb(0, 0, 0);
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+     
+        
+        
+        
+    
+    
+    
+ @keyframes summer {
+        
+        
+        /* 0%   {color:rgb(232, 151, 151); 
+            width: 100px;
+            height: 100px;}
+        
+        25%  {color:rgb(242, 242, 150); 
+            width: 200px;}
+        50%  {color:rgb(149, 149, 234);
+            width: 100px;
+            height: 100px;}
+        75%  {color:rgb(153, 244, 153);
+            width: 200px;}   
+        100% {color:rgb(0, 0, 0);
+            width: 100px;
+            height: 100px;}
+                        
+                         */
+    0%   {transform: perspective(150px) rotateX(  0deg)}
+    25%{transform: perspective(150px) rotateX(  90deg)}
+    50% {transform: perspective(150px) rotateX(180deg)}
+    75%{transform: perspective(150px) rotateX(  270deg)}
+    100%   {transform: perspective(150px) rotateX(  360deg)}
+
+
+                    }
+@media only screen and (max-width: 600px) {
+                        
+
+
+    #prodact{
+         #item{
+            border-radius: 10px;
+            height: 100%;
+            width: 300px;
+            display: flex;
+            margin: 20px;
+            overflow: hidden;
+            flex-direction: column-reverse;
+        }
+    }   
+   
+        #vid{
+            h1{
+                font-size: 50px;
+            }
+            
+        }
+        
+    }
